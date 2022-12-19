@@ -1,6 +1,6 @@
-grove.py (0.6.0+ptos3-1) bullseye; urgency=medium
+grove.py (0.6.0-1) bullseye; urgency=medium
 
-  * First release
+  * First Debian release
 
  -- pi-top <deb-maintainers@pi-top.com>  Fri, 16 Dec 2022 16:00:36 -0300
 

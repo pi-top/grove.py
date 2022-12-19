@@ -20,5 +20,5 @@ Description: Python library for Seeedstudio Grove Devices
  especially good on the following platforms: Coral Dev Board,
  NVIDIA Jetson Nano and Raspberry Pi
  .
- This package contains the python3 libraries.
+ This package contains the python3 library.
 
