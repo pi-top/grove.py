@@ -1,0 +1,24 @@
+Source: grove.py
+Section: python
+Priority: optional
+Maintainer: pi-top <deb-maintainers@pi-top.com>
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-sequence-python3,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.5.1
+Homepage: https://github.com/Seeed-Studio/grove.py
+
+Package: python3-grove.py
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Python library for Seeedstudio Grove Devices
+ Python library for Seeedstudio Grove Devices on embedded Linux platform,
+ especially good on the following platforms: Coral Dev Board,
+ NVIDIA Jetson Nano and Raspberry Pi
+ .
+ This package contains the python3 libraries.
+
