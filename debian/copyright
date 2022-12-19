@@ -1,0 +1,14 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: grove.py
+Source: https://github.com/Seeed-Studio/grove.py
+Upstream-Contact: deb-maintainers@pi-top.com
+
+Files:
+    *
+Copyright: 2018 Seeed Studio
+License: MIT
+
+License: MIT
+ `/usr/share/grove.py/LICENSE'.
+
+
