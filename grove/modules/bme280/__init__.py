@@ -397,17 +397,17 @@ class bme280:
             t_fine = self.__comp_temperature()
             self.temperature = t_fine / 5120.0  # Output value of “51.23” equals 51.23 DegC
             self.calibrated_temperature = (self.temperature
-                                           + (0 if self.calibration_temperature is 0 else self.calibration_temperature))
+                                           + (0 if self.calibration_temperature == 0 else self.calibration_temperature))
 
             # Get pressure
             self.pressure = self.__comp_pressure(t_fine) / 100.0
             self.calibrated_pressure = (self.pressure
-                                        + (0 if self.calibration_pressure is 0 else self.calibration_pressure))
+                                        + (0 if self.calibration_pressure == 0 else self.calibration_pressure))
 
             # Get Humidity
             self.humidity = self.__comp_humidity(t_fine)
             self.calibrated_humidity = (self.humidity
-                                        + (0 if self.calibration_humidity is 0 else self.calibration_humidity))
+                                        + (0 if self.calibration_humidity == 0 else self.calibration_humidity))
 
             return 1
         except Exception as e:
