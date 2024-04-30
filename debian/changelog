@@ -1,3 +1,9 @@
+grove.py (0.6.0-2) bullseye; urgency=medium
+
+  * Package for Bookworm (#4)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Tue, 30 Apr 2024 20:59:26 +0000
+
 grove.py (0.6.0-1) bullseye; urgency=medium
 
   * First Debian release
