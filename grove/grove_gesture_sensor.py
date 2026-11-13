@@ -45,11 +45,8 @@ import RPi.GPIO as GPIO
 from grove.i2c import Bus
 
 # use the bus that matches your raspi version
-rev = GPIO.RPI_REVISION
-if rev == 2 or rev == 3:
-    bus = Bus(1)
-else:
-    bus = Bus(0)
+bus = Bus()
+
 
 class gesture:
 	#Registers and variables for the gesture sensor
@@ -483,11 +480,11 @@ class gesture:
 			time.sleep(self.GES_ENTRY_TIME)
 			data=self.paj7620ReadReg(0x43, 1)[0]
 			if data == self.GES_FORWARD_FLAG:
+				time.sleep(self.GES_QUIT_TIME)
 				return 1
-				time.sleep(self.GES_QUIT_TIME)
 			elif data == self.GES_BACKWARD_FLAG:
-				return 2
 				time.sleep(self.GES_QUIT_TIME)
+				return 2
 			else:
 				return 3
 				
@@ -495,11 +492,11 @@ class gesture:
 			time.sleep(self.GES_ENTRY_TIME)
 			data=self.paj7620ReadReg(0x43, 1)[0]
 			if data == self.GES_FORWARD_FLAG:
+				time.sleep(self.GES_QUIT_TIME)
 				return 1
-				time.sleep(self.GES_QUIT_TIME)
 			elif data == self.GES_BACKWARD_FLAG:
-				return 2
 				time.sleep(self.GES_QUIT_TIME)
+				return 2
 			else:
 				return 4	
 		
@@ -507,11 +504,11 @@ class gesture:
 			time.sleep(self.GES_ENTRY_TIME)
 			data=self.paj7620ReadReg(0x43, 1)[0]
 			if data == self.GES_FORWARD_FLAG:
+				time.sleep(self.GES_QUIT_TIME)
 				return 1
-				time.sleep(self.GES_QUIT_TIME)
 			elif data == self.GES_BACKWARD_FLAG:
-				return 2
 				time.sleep(self.GES_QUIT_TIME)
+				return 2
 			else:
 				return 5		
 				
@@ -519,21 +516,21 @@ class gesture:
 			time.sleep(self.GES_ENTRY_TIME)
 			data=self.paj7620ReadReg(0x43, 1)[0]
 			if data == self.GES_FORWARD_FLAG:
+				time.sleep(self.GES_QUIT_TIME)
 				return 1
-				time.sleep(self.GES_QUIT_TIME)
 			elif data == self.GES_BACKWARD_FLAG:
-				return 2
 				time.sleep(self.GES_QUIT_TIME)
+				return 2
 			else:
 				return 6
 		
 		elif data==self.GES_FORWARD_FLAG:
-			return 1
 			time.sleep(self.GES_QUIT_TIME)
+			return 1
 			
 		elif data==self.GES_BACKWARD_FLAG:
-			return 2
 			time.sleep(self.GES_QUIT_TIME)
+			return 2
 			
 		elif data==self.GES_CLOCKWISE_FLAG:
 			return 7

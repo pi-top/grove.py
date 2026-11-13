@@ -4,12 +4,10 @@ grove.py
 ========
 
 [![Build Status](https://travis-ci.org/Seeed-Studio/grove.py.svg?branch=master)](https://travis-ci.org/Seeed-Studio/grove.py)
-[![](https://img.shields.io/pypi/v/grove.py.svg)](https://pypi.python.org/pypi/grove.py)
+[![](https://img.shields.io/pypi/v/Seeed-grove.py.svg)](https://pypi.python.org/pypi/Seeed-grove.py)
 
-Python library for Seeedstudio Grove Devices on embedded Linux platform, especially good on below platforms:
-- [Coral Dev Board](https://www.seeedstudio.com/Coral-Dev-Board-p-2900.html) [(Wiki)](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#software)
-- [NVIDIA Jetson Nano](https://www.seeedstudio.com/NVIDIA-Jetson-Nano-Development-Kit-p-2916.html) [(Wiki)](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#software)
-- [Raspberry Pi](https://www.seeedstudio.com/category/Boards-c-17.html) [(Wiki)](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#software)
+Python library for Seeedstudio Grove Devices on embeded Linux platform, especially good on below platforms:
+- [Raspberry Pi](https://www.seeedstudio.com/category/Boards-c-17.html) [(Wiki)](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#software)
 
 <br><br>
 # Architecture
@@ -25,34 +23,39 @@ For beginner or library user only, please install with online method.<br>
 For developer or advanced user, please install [dependencies](doc/INSTALL.md#install-dependencies)
 and then install grove.py with [source code](#install-grovepy).
 
-### Caution
-
-Here is the compatibility of [grove.py](https://github.com/Seeed-Studio/grove.py) with Python2 and Python3 on each releases of Raspbian/Raspberry Pi OS.
-
-| Raspberry Pi OS Releases | grove.py for Python2 | grove.py for Python3 |
-| ---- | ---- | ---- |
-| 9 (Stretch) | √ | √ |
-| 10 (Buster) until 2020-08-20 | √ | √ |
-| 10 (Buster) after 2020-08-20 | × | √ |
-| 11 (Bullseye) | × | √ |
-
-**Because Python2 is obsolete and APT repository does not provide `python-pip`, so the Raspberry Pi OS releases which after `10 (Buster) 2020-08-20` cannot use `Online install` command. We also recommend using Python3 to all the users and developers.**
+## dependencies
+```shell
+# Add repository
+echo "deb https://seeed-studio.github.io/pi_repo/ stretch main" | sudo tee /etc/apt/sources.list.d/seeed.list
+# Add GPG key
+curl https://seeed-studio.github.io/pi_repo/public.key | sudo apt-key add -
+sudo apt update
+sudo apt install libbmi088 libbma456
+```
 
 ### Online install
-install/update all dependencies and latest grove.py
+To install into a virtual environment, first active your virtualenv and type the following command:
+
+```bash
+curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | bash -s -- --user-local --bypass-gui-installation
+```
+
+If you want to install into the system, you can type the following command:
 ```shell
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
 ```
-
 ### Install grove.py
 From source code
 ```shell
 git clone https://github.com/Seeed-Studio/grove.py
 cd grove.py
-# Python2 (This command line does not provide for Raspberrypi OS 10 (Buster) >= 2020-12-02)
-sudo pip install .
 # Python3 
 sudo pip3 install .
+# virutalenv for Python3 (If the installation fails when using pip3)
+sudo apt install python3-virtualenv
+virtualenv -p python3 env
+source env/bin/activate
+pip3 install .
 ```
 
 <br><br>

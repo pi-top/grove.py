@@ -1,3 +1,14 @@
+grove.py (0.8+git20260225-1) UNRELEASED; urgency=medium
+
+  * Update to upstream master as of 2026-02-25 (15505cb; latest release is
+    0.8 on PyPI, 2024-08-14), which drops the
+    Intel UPM and MRAA imports that broke the button, temperature and
+    display modules on pi-topOS
+  * Don't depend on bmm150, bme680 or sgp30: not packaged for pi-topOS and
+    only needed by their own sensor modules
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 13 Nov 2026 10:05:23 -0600
+
 grove.py (0.6.0-3) bookworm; urgency=medium
 
   * Allow running the changelog bump by hand
