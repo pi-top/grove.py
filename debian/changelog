@@ -1,4 +1,4 @@
-grove.py (0.8+git20260225-1) UNRELEASED; urgency=medium
+grove.py (0.8+git20260225-1) bookworm; urgency=medium
 
   * Update to upstream master as of 2026-02-25 (15505cb; latest release is
     0.8 on PyPI, 2024-08-14), which drops the
@@ -6,8 +6,9 @@ grove.py (0.8+git20260225-1) UNRELEASED; urgency=medium
     display modules on pi-topOS
   * Don't depend on bmm150, bme680 or sgp30: not packaged for pi-topOS and
     only needed by their own sensor modules
+  * Update to upstream grove.py (master after 0.8) and fix the UPM import failures (#8)
 
- -- pi-top <deb-maintainers@pi-top.com>  Fri, 13 Nov 2026 10:05:23 -0600
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 13 Nov 2026 18:00:42 +0000
 
 grove.py (0.6.0-3) bookworm; urgency=medium
 
