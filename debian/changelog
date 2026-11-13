@@ -1,3 +1,10 @@
+grove.py (0.6.0-3) bookworm; urgency=medium
+
+  * Allow running the changelog bump by hand
+  * Regenerate Debian workflows: drop bullseye, move off the dead runner (#6)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 13 Nov 2026 15:49:18 +0000
+
 grove.py (0.6.0-2) bullseye; urgency=medium
 
   * Package for Bookworm (#4)
