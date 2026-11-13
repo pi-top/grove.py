@@ -1,1 +1,4 @@
 smbus2 python3-smbus2
+bmm150
+bme680
+sgp30

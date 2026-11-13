@@ -18,40 +18,42 @@ Some devices need root permission signed in sudo column, the coresponding comman
       <th>Grove Devices</th>
       <th>Command</th>
       <th>RPi</th>
-      <th>Coral</th>
-      <th>Jetson Nano</th>
       <th>Argument/Comment</th>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-1-Wire-Thermocouple-Amplifier-MAX31850-p-3159.html">1-Wire Thermocouple Amplifier (MAX31850K)</a></td>
       <td>grove_1wire_thermocouple_amplifier_max31850</td>
       <td>&bull;</td>
-      <td></td>
-      <td></td>
       <td>1-Wire</td>
+    </tr>
+    <tr align="center">
+      <td><a href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2-p-3034.html">3-Axis Digital Compass V2</a></td>
+      <td>grove_3_axis_compass_bmm150</td>
+      <td>y</td>
+      <td>I2C</td>
+    </tr>
+    <tr align="center">
+      <td><a href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR-p-4533.html">3-Axis Digital Accelerometer(+/-400g)</a></td>
+      <td>grove_3_axis_digital_accelerometer</td>
+      <td>y</td>
+      <td>I2C</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-4-Digit-Display-p-1198.html">4 Digit Display</a></td>
       <td>grove_4_digit_display</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-6-Axis-Accelerometer-Gyroscope-BMI08-p-3188.html">6-Axis Accelerometer&Gyroscope</a></td>
       <td>grove_6_axis_accel_gyro_bmi088</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V2-MPR12-p-3141.html">12 Key Capacitive I2C Touch Sensor V2(MPR121)</a></td>
       <td>grove_12_key_cap_i2c_touch_mpr121</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -62,56 +64,42 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_16x2_lcd</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-Air-quality-sensor-v1.3-p-2439.html">Air quality sensor v1.3</a></td>
       <td>grove_air_quality_sensor_v1_3</td>
       <td>y</td>
-      <td>y</td>
-      <td></td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-Button-p-766.html">Button</a></td>
       <td>grove_button</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-Capacitive-Touch-Slider-Sensor-CY8C4014LQ-p-3183.html">Capacitive Touch Slide Sensor(CY8C4014LQI)</a></td>
       <td>grove_cap_touch_slider_cy8c</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-Collision-Sensor-p-1132.html">Collision Sensor</a></td>
       <td>grove_collision_sensor</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
       <td><a href="http://www.seeedstudio.com/Grove-Gesture-p-2463.html">Gesture Sensor v1.0</a></td>
       <td>grove_gesture_sensor</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
       <td><a href="https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP980-p-3108.html">I2C High Accuracy Temperature Sensor(MCP9808)</a></td>
       <td>grove_high_accuracy_temperature</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -120,8 +108,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_i2c_color_sensor_v2</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -130,8 +116,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_i2c_motor_driver</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -140,8 +124,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_i2c_thermocouple_amplifier_mcp9600</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -150,8 +132,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_imu_9dof_icm20600_ak09918</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -161,8 +141,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_lcd_1.2inches</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -174,8 +152,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_led</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -184,8 +160,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_light_sensor_v1_2</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -194,8 +168,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_loudness_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -204,8 +176,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_mech_keycap</td>
       <td>&bull;</td>
-      <td></td>
-      <td></td>
       <td>arg1 - PWM pin</td>
     </tr>
     <tr align="center">
@@ -215,8 +185,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_mini_pir_motion_sensor</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -225,8 +193,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_moisture_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -239,8 +205,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
           grove_multi_switch_poll
       </td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -249,8 +213,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_oled_display_128x64</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -259,8 +221,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_optical_rotary_encoder</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -269,9 +229,15 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_piezo_vibration_sensor</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
+    </tr>
+    <tr align="center">
+      <td>
+        <a href="https://www.seeedstudio.com/Grove-Buzzer-p-768.html">Buzzer</a>
+      </td>
+      <td>grove_pwm_buzzer</td>
+      <td>&bull;</td>
+      <td>PWM</td>
     </tr>
     <tr align="center">
       <td>
@@ -279,8 +245,6 @@ Some devices need root permission signed in sudo column, the coresponding comman
       </td>
       <td>grove_recorder_v3_0</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>
 <pre>
 arg1 - digital pin
@@ -295,8 +259,6 @@ arg2 - record duration
       </td>
       <td>grove_relay</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -305,8 +267,6 @@ arg2 - record duration
       </td>
       <td>grove_rotary_angle_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -315,8 +275,6 @@ arg2 - record duration
       </td>
       <td>grove_round_force_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -327,8 +285,6 @@ arg2 - record duration
       </td>
       <td>grove_ryb_led_button</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -337,8 +293,6 @@ arg2 - record duration
       </td>
       <td>grove_servo</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -347,8 +301,6 @@ arg2 - record duration
       </td>
       <td>grove_slide_potentiometer</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -357,8 +309,6 @@ arg2 - record duration
       </td>
       <td>grove_sound_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -367,8 +317,6 @@ arg2 - record duration
       </td>
       <td>grove_step_counter_bma456</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -377,8 +325,6 @@ arg2 - record duration
       </td>
       <td>grove_switch</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -387,8 +333,6 @@ arg2 - record duration
       </td>
       <td>grove_temperature_humidity_bme680</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -398,8 +342,6 @@ arg2 - record duration
       </td>
       <td>grove_temperature_humidity_sensor</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>
 <pre>
 arg1 - digital pin
@@ -415,8 +357,6 @@ arg2 - dht_type,
       </td>
       <td>grove_temperature_humidity_sht31</td>
       <td>y</td>
-      <td></td>
-      <td>&bull;</td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -425,8 +365,6 @@ arg2 - dht_type,
       </td>
       <td>grove_temperature_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -435,8 +373,6 @@ arg2 - dht_type,
       </td>
       <td>grove_thumb_joystick</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -445,8 +381,6 @@ arg2 - dht_type,
       </td>
       <td>grove_tilt_switch</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -455,8 +389,6 @@ arg2 - dht_type,
       </td>
       <td>grove_time_of_flight_distance</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -465,8 +397,6 @@ arg2 - dht_type,
       </td>
       <td>grove_touch_sensor</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
     </tr>
     <tr align="center">
@@ -475,9 +405,15 @@ arg2 - dht_type,
       </td>
       <td>grove_ultrasonic_ranger</td>
       <td>y</td>
-      <td>&bull;</td>
-      <td></td>
       <td>arg1 - digital pin</td>
+    </tr>
+   <tr align="center">
+      <td>
+        <a href="https://www.seeedstudio.com/Grove-I2C-UV-Sensor-VEML6070.html">UV Sensor</a>
+      </td>
+      <td>grove_uv_sensor</td>
+      <td>y</td>
+      <td>I2C</td>
     </tr>
     <tr align="center">
       <td>
@@ -485,8 +421,6 @@ arg2 - dht_type,
       </td>
       <td>grove_voc_eco2_gas_sgp30</td>
       <td>y</td>
-      <td></td>
-      <td></td>
       <td>I2C</td>
     </tr>
     <tr align="center">
@@ -495,8 +429,6 @@ arg2 - dht_type,
       </td>
       <td>grove_water_sensor</td>
       <td>y</td>
-      <td>y</td>
-      <td>&bull;</td>
       <td>arg1 - analog pin</td>
     </tr>
     <tr align="center">
@@ -507,8 +439,6 @@ arg2 - dht_type,
       </td>
       <td>grove_ws2813_rgb_led_strip</td>
       <td>&bull;</td>
-      <td></td>
-      <td></td>
       <td>
 <pre>
 arg1 - PWM pin
@@ -517,6 +447,30 @@ arg2 - led count,
        for the three models listed left.
 </pre>
       </td>
+    </tr>
+    <tr align="center">
+      <td>
+        <a href="https://www.seeedstudio.com/Grove-Sunlight-Sensor.html">sunlight Sensor</a>
+      </td>
+      <td>grove_sunlight_sensor</td>
+      <td>y</td>
+      <td>I2C</td>
+    </tr>
+    <tr align="center">
+      <td>
+        <a href="https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.htm">digital light Sensor</a>
+      </td>
+      <td>grove_digital_light_sensor</td>
+      <td>y</td>
+      <td>I2C</td>
+    </tr>
+    <tr align="center">
+      <td>
+        <a href="https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/#resources">Grove - Barometer Sensor</a>
+      </td>
+      <td>Grove_Barometer_hp206f_sensor</td>
+      <td>y</td>
+      <td>I2C</td>
     </tr>
   </table>
 </div>
@@ -631,7 +585,7 @@ while True:
 ### I2C Color Sensor V2
 ```python
 import time
-from grove.grove_i2c_color_sensor_v2 import GroveI2CColorSensorV2
+from grove.grove_i2c_color_sensor_v2 import GroveI2cColorSensorV2
 sensor = GroveI2cColorSensorV2()
 
 print('Raw data of red-filtered, green-filtered, blue-filtered and unfiltered photodiodes')
@@ -729,6 +683,22 @@ while True:
 print("Motor run ended, time = {:.2f} !".format(time.time()))
 ```
 
+#### Buzzer PWM mode
+```python
+import time
+import RPi.GPIO as GPIO
+
+# Grove Base Hat for Raspberry Pi
+#   PWM JST SLOT - PWM[12 13 VCC GND]
+pin = 12
+# create PWM instance
+pwm = GPIO.PWM(pin, 10)
+pwm.start(0) 
+# 1000 Hz sound
+pwm.ChangeFrequency(1000)
+pwm.ChangeDutyCycle(100)
+```
+
 ### Temperature & Humidity Sensor(DHT11)
 ```python
 import time
@@ -783,3 +753,25 @@ while True:
     time.sleep(1)
 ```
 
+### sunlight Sensor
+```python
+from grove.grove_sunlight_sensor import GroveSi115xSensor
+import time
+
+SI1151 = GroveSi115xSensor()
+while True:
+    print('Visible %03d IR %03d' % (SI1151.ReadVisible , SI1151.ReadIR),end=" ")
+    print('\r', end='')
+    time.sleep(0.5)
+```
+
+### digitial ligth sensor
+```python
+import time
+from grove.grove_digital_light_sensor import GroveDigitalLight
+
+sensor = GroveDigitalLight()
+while True:
+    print('light: %d' %(sensor.read_light_chan0()))
+    time.sleep(0.5)
+```
